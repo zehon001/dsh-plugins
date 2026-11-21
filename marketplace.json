@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "title": {
+    "en": "DSH Plugins",
+    "zh": "DSH 插件集"
+  },
+  "description": {
+    "en": "DeepSeek Harness plugins by zehon001.",
+    "zh": "zehon001 的 DeepSeek Harness 插件。"
+  },
+  "metadata": {
+    "categories": {
+      "agents": {
+        "title": {
+          "en": "Agents & teams",
+          "zh": "智能体与团队"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-agent-bridge",
+      "title": {
+        "en": "DSH Agent Bridge",
+        "zh": "DSH 智能体桥接"
+      },
+      "description": {
+        "en": "Connect local tools to DeepSeek Harness workspaces, agent sessions and events.",
+        "zh": "通过本机接口连接 DeepSeek Harness 工作区、智能体会话和事件。"
+      },
+      "author": "zehon001",
+      "repository": {
+        "url": "https://github.com/zehon001/dsh-plugins"
+      },
+      "homepage": "https://github.com/zehon001/dsh-plugins/tree/main/plugins/dsh-agent-bridge",
+      "metadata": {
+        "category": "agents",
+        "keywords": [
+          "agents",
+          "workspaces",
+          "blueprint-studio"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.2.0",
+          "publishTimestamp": 1795305209,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/zehon001/dsh-plugins",
+            "commit": "67fbf2018916d87e5002d91542b9ad24ed39daa8",
+            "path": "plugins/dsh-agent-bridge"
+          }
+        }
+      ]
+    }
+  ]
+}
