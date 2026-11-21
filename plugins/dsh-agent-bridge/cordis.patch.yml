@@ -1,0 +1,10 @@
+# dsh-agent-bridge —— 挂载声明
+#
+# DSH 启动时按 bundle 层栈把各插件的 patch 叠起来组成配置树。
+# 本文件把 orchestrator 插件行插入配置树：
+#   - id 必须全局唯一且与包名一致（DSH STORE 上架契约按它比对 entryIds）
+#   - name 解析到包入口 lib/index.js（宿主半侧）
+
+- insert:
+    - id: dsh-agent-bridge
+      name: 'dsh-agent-bridge'
