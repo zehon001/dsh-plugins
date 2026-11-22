@@ -23,7 +23,7 @@
       "name": "dsh-agent-bridge",
       "title": {
         "en": "DSH Agent Bridge",
-        "zh": "DSH 智能体桥接"
+        "zh": "DSH Agent 桥接插件"
       },
       "description": {
         "en": "Connect local tools to DeepSeek Harness workspaces, agent sessions and events.",

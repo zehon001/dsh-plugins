@@ -1,4 +1,6 @@
-# dsh-agent-bridge
+# DSH Agent 桥接插件
+
+包名 `dsh-agent-bridge`。
 
 让 **DSH 内部（Agent 工具层）** 与 **外部第三方工具（HTTP API 层）** 都能编排 DSH 的工作区与会话，并在会话完成时获得**实时通知**。
 
@@ -91,20 +93,20 @@ dsh plugin --profile blueprint-studio add --save-exact '@deepseek-ai/cordis@4.1.
 dsh plugin --profile blueprint-studio peers check
 ```
 
-为 DSH Web 和编排服务分别分配端口。在该 profile 的 `cordis.patch.yml` 中设置编排端口，
+为 DSH Web 和桥接服务分别分配端口。在该 profile 的 `cordis.patch.yml` 中设置桥接端口，
 并为 `apiToken` 生成独立的随机密钥：
 
 ```yaml
 - id: dsh-agent-bridge
   config:
     host: 127.0.0.1
-    port: <编排端口>
+    port: <桥接端口>
     apiToken: '<随机长字符串>'
 ```
 
 用 `dsh --profile blueprint-studio --host 127.0.0.1 --port <DSH Web 端口> --no-open`
 启动该 profile。Studio 使用 `BP_DSH_PROFILE=blueprint-studio` 和
-`BP_DSH_URL=http://127.0.0.1:<编排端口>` 连接。
+`BP_DSH_URL=http://127.0.0.1:<桥接端口>` 连接。
 
 ### macOS 桌面端
 
